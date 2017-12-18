@@ -1,0 +1,28 @@
+{
+  "name": "localizationkit",
+  "version": "1.0.0",
+  "description": "Localize your app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willpowell8/LocalizationKit_js.git"
+  },
+  "keywords": [
+    "localization",
+    "localizationkit",
+    "translation"
+  ],
+  "author": "Will Powell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/willpowell8/LocalizationKit_js/issues"
+  },
+  "homepage": "https://github.com/willpowell8/LocalizationKit_js#readme",
+  "dependencies": {
+    "socket.io-client": "^2.0.4",
+    "xmlhttprequest": "^1.8.0"
+  }
+}
