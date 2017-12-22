@@ -39,7 +39,7 @@ Localization = new LocalizationKit("[[API_KEY]]")
 
 ``` javascript
 Localization.loadLanguage("en", function(){
-	console.log("English Language loaded)
+	console.log("English Language loaded")
 })
 ```
 
