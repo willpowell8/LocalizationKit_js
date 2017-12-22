@@ -20,11 +20,14 @@ var getJSON = function(url, callback) {
 function LocalizationKit(appuuid){
 	this.appuuid = appuuid
 	this.liveSocket = false
-	this.prefix = ""//"/v2"
-	this.server = "http://localhost:3000" //https://www.localizationkit.com
+	this.languageData = null
+	this.selectedLanguage = null
+	this.prefix = "/v2"
+	this.server = "https://www.localizationkit.com"
 	this.loadLanguage = function(code, callback){
 		var url = this.server+this.prefix+"/api/app/"+this.appuuid+"/language/"+code
 		var self = this
+		this.selectedLanguage = code
 		getJSON(url,function(err, languageData) {
 		  if (err !== null) {
 		    console.log('Something went wrong: ' + err);
