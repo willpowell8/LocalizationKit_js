@@ -13,7 +13,7 @@ This is the initial version of KIT for Javascript. This currently supports local
 - String auto detection
 
 
-## Installation
+## Use by Installation
 
 ``` javascript
 npm install --save localizationkit
@@ -22,21 +22,20 @@ Get a developer key from [localizationkit.com](https://www.localizationkit.com/a
 
 Start the localization engine:
 ``` javascript
-var LocalizationKit =  require('./index')
+var LocalizationKit =  require('localizationkit')
 Localization = new LocalizationKit("[[API_KEY]]")
 ```
 
-### Use as script tag
-
+## Use as script tag
+If you want to include the localization as a script tag you dont need to call load a language as it detects the browser language.
 ``` html
-<script></script>
+<script src="//www.localizationkit.com/v2/app/[[API_KEY]]/localizationkit.js"></script>
 ```
 
 ## How to use
 
-### Load language
-
-
+### Load language 
+Not needed when you load as script unless you want to change language
 ``` javascript
 Localization.loadLanguage("en", function(){
 	console.log("English Language loaded")
@@ -44,7 +43,6 @@ Localization.loadLanguage("en", function(){
 ```
 
 ### Get String
-
 ``` javascript
 var localizedString = Localization.getValue("com.general")
 ```
